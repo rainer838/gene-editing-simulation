@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Gene Editing Fish Simulation</title>
 
   <style>
     body {
-      font-family: Arial;
       background-color: #87CEEB;
+      font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
       padding: 30px;
     }
 
     h1 {
       color: darkblue;
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 22px;
+      color: black;
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 30px;
     }
 
     iframe {
-      width: 1000px;
-      height: 700px;
-      border: 3px solid darkblue;
-      border-radius: 10px;
-      background: white;
+      width: 1200px;
+      height: 850px;
+      border: 5px solid darkblue;
+      border-radius: 15px;
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
     }
   </style>
 </head>
 
 <body>
 
-<h1>Gene Editing Effects on Fish Populations</h1>
+  <h1>Gene Editing Effects on Fish Populations</h1>
 
-<p>
-This simulation compares wild fish, CRISPR-modified fish,
-and TALEN-modified fish under environmental stress.
-</p>
+  <p>
+    This simulation compares wild fish, CRISPR-modified fish,
+    and TALEN-modified fish under environmental stress.
+    It tracks population growth, survival, and mutation rates over time.
+  </p>
 
-<iframe
-src="https://netlogoweb.org/web?https://raw.githubusercontent.com/rainer838/gene-editing-simulation/main/FINAL_SCI_G4.nlogox"
+  <div class="container">
+
+    <iframe
+      src="https://netlogoweb.org/web?https://raw.githubusercontent.com/rainer838/gene-editing-simulation/main/simulation.nlogo">
+    </iframe>
+
+  </div>
+
 </body>
+
 </html>
